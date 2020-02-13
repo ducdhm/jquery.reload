@@ -1,0 +1,41 @@
+{
+    "name": "jquery.reload",
+    "title": "jQuery Reload",
+    "libraryName": "Reload",
+    "version": "1.0.0",
+    "description": "The jQuery plugin for reload/sync content of component via AJAX",
+    "scripts": {
+        "build": "webpack --prod",
+        "dev": "webpack --progress --color --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/ducdhm/jquery.reload"
+    },
+    "keywords": [
+        "jquery",
+        "jquery-reload",
+        "reload-content",
+        "sync-content"
+    ],
+    "author": "Duc Doan <ducdhm@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ducdhm/jquery.reload/issues"
+    },
+    "homepage": "https://github.com/ducdhm/jquery.reload",
+    "devDependencies": {
+        "@babel/core": "^7.6.4",
+        "@babel/plugin-proposal-class-properties": "^7.5.5",
+        "@babel/plugin-proposal-export-default-from": "^7.5.2",
+        "@babel/preset-env": "^7.6.3",
+        "babel-loader": "^8.0.6",
+        "string-replace-loader": "^2.2.0",
+        "webpack": "^4.41.2",
+        "webpack-cli": "^3.3.9",
+        "yargs": "^13.3.0"
+    },
+    "dependencies": {
+        "jquery": "^3.4.1"
+    }
+}

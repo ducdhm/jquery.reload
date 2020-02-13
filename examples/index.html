@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>jQuery Reload - The jQuery plugin for reload/sync content of component via AJAX</title>
+        <link rel="stylesheet" type="text/css" href="./vendors/bootstrap-3.4.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="./vendors/font-awesome-4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="./css/examples.css" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-top">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://github.com/ducdhm/jquery.reload">jQuery Reload</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-top">
+                    <ul class="nav navbar-nav">
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://github.com/ducdhm" target="_blank"><i class="fa fa-user-circle"></i> Duc Doan</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-sm-3">Reload for</label>
+                    <div class="col-sm-8">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="element-1-chk" checked /> Element #1
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="element-2-chk" checked /> Element #2
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="element-3-chk" checked /> Element #3
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-3">Reload from</label>
+                    <div class="col-sm-8">
+                        <button type="button" id="page-1" class="btn btn-sm btn-primary">from <b>html/page-1.html</b></button>
+                        <button type="button" id="page-2" class="btn btn-sm btn-success">from <b>html/page-2.html</b></button>
+                        <button type="button" id="page-3" class="btn btn-sm btn-warning">from <b>html/page-3.html</b></button>
+                    </div>
+                </div>
+            <div>
+
+            <hr />
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4>Element #1</h4>
+                    <div id="element-1" class="well well-sm">Original content for element #1</div>
+                </div>
+                <div class="col-sm-4">
+                    <h4>Element #2</h4>
+                    <div id="element-2" class="well well-sm">Original content for element #2</div>
+                </div>
+                <div class="col-sm-4">
+                    <h4>Element #3</h4>
+                    <div id="element-3" class="well well-sm">Original content for element #3</div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="./vendors/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../dist/jquery.reload.js"></script>
+        <script type="text/javascript" src="./js/examples.js"></script>
+    </body>
+</html>
