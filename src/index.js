@@ -23,6 +23,7 @@ $.fn.reload = function (config) {
     log(`[jquery.reload] INFO :: Reload url: "${reloadUrl}"`);
 
     typeof options.beforeReload === 'function' && options.beforeReload.call(elements, options);
+    elements.trigger('reload:before', options);
 
     $.ajax({
         type: 'GET',
@@ -41,9 +42,11 @@ $.fn.reload = function (config) {
             });
 
             typeof options.onReloaded === 'function' && options.onReloaded(elements, fragment, options);
+            elements.trigger('reload:reloaded', fragment, options);
         },
         error: (jqXHR) => {
             typeof options.onError === 'function' && options.onError(elements, jqXHR, options);
+            elements.trigger('reload:error', jqXHR, options);
         },
     });
 
