@@ -6,8 +6,7 @@
     "description": "The jQuery plugin for reload/sync content of component via AJAX",
     "scripts": {
         "build": "webpack --prod",
-        "dev": "webpack --progress --color --watch",
-        "publish": "node tools\\publishNewVersion"
+        "dev": "webpack --progress --color --watch"
     },
     "repository": {
         "type": "git",
